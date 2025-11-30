@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UsersApp.domain.Persistence.Common;
 
 namespace UsersApp.domain.Persistence.Users
 {
-    internal interface IUserUnitOfWork
+    public interface IUserUnitOfWork : IUnitOfWork
     {
+        IUserRepository Repository { get; }
+
     }
 }

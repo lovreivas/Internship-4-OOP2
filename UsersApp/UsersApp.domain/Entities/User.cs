@@ -7,7 +7,7 @@ using UsersApp.domain.Common.Validation.ValidationItems;
 
 namespace UsersApp.domain.Entities
 {
-    public class User
+    public class User 
     {
         public string Name { get; set; }
         public string Username { get; set; }

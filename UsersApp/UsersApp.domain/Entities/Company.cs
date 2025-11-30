@@ -8,7 +8,7 @@ using UsersApp.domain.Common.Validation.ValidationItems;
 
 namespace UsersApp.domain.Entities
 {
-    public class Company
+    public class Company 
     {
         public const int NameMaxLength = 150;
         public string Name { get; set; }
