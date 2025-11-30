@@ -32,7 +32,7 @@ namespace UserApp.application.Common.Model
             init => _warnings.AddRange(value);
         }
         public bool HasError => Errors.Any(validationResult => validationResult.ValidationSeverity == ValidationSeverity.Error);
-        public bool HasInfo => Infos.Any(validationResult => validationResult.ValidationSeverity == ValidationSeverity.Info);
+        public bool HasInfo => Infos.Any(validationResult => validationResult.ValidationSeverity == ValidationSeverity.Information);
         public bool HasWarning => Warnings.Any(validationResult => validationResult.ValidationSeverity == ValidationSeverity.Warning);
 
         public void SetResult(TVaule? value)

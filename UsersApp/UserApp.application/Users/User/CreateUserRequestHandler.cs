@@ -31,7 +31,7 @@ namespace UserApp.application.Users.User
         }
         protected async override Task<Result<SuccessPostResponse>> HandleRequest(CreateUserRequest request, Result<SuccessPostResponse> result)
         {
-            var user = new UserApp.domain.Entities.User
+            var user = new UsersApp.domain.Entities.User
             {
                 Name = request.Name,
                 Username = request.Username,
@@ -47,6 +47,7 @@ namespace UserApp.application.Users.User
             };
             var validationResult = await user.Create(_unitOfWork.Repository);
             result.SetValidationResult(validationResult.ValidationResult);
+
             if (result.HasError)
                 return result;
             await _unitOfWork.SaveAsync();

@@ -21,6 +21,7 @@ namespace UsersApp.domain.Entities
         public string Password { get; set; }
 
         public bool IsActive { get; set; } = true;
+        public object? Id { get; set; }
 
         public const int NameMaxLength = 100;
         public const int AddressStreetMaxLength = 150;
