@@ -1,6 +1,6 @@
 ﻿using UserApp.application.Common.Model;
 
-namespace UserApp.api.Controllers
+namespace UserApp.api.Common
 {
     public class Response<TValue> where TValue : class
     {

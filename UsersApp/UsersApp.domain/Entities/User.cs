@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UsersApp.domain.Common.Model;
 using UsersApp.domain.Common.Validation.ValidationItems;
+using UsersApp.domain.Persistence.Users;
 
 namespace UsersApp.domain.Entities
 {
-    public class User 
+    public class User
     {
         public string Name { get; set; }
         public string Username { get; set; }

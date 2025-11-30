@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using UsersApp.domain.Common.Validation;
 
 namespace UsersApp.domain.Common.Model
 {
-    public class Result
+    public class Result<TValue>
     {
         public TValue Value { get; private set; }
         public ValidationResult ValidationResult { get; private set; }
@@ -19,3 +14,4 @@ namespace UsersApp.domain.Common.Model
         }
     }
 }
+

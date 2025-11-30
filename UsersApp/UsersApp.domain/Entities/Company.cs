@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UsersApp.domain.Abstractions;
+using UsersApp.domain.Common.Model;
 using UsersApp.domain.Common.Validation.ValidationItems;
+using UsersApp.domain.Persistence.Companies;
 
 namespace UsersApp.domain.Entities
 {

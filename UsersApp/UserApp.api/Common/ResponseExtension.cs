@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using UserApp.application.Common.Model;
 
-namespace UserApp.api.Controllers
+namespace UserApp.api.Common
 {
     public static class ResponseExtension
     {
